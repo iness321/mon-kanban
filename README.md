@@ -1,16 +1,48 @@
-# React + Vite
+# 🗂 KanbanRT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web Kanban complète permettant de gérer des tâches par statut, priorité et catégorie.
 
-Currently, two official plugins are available:
+## 👥 Équipe
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Inass Atouil
+- Matisse Neau
+- Fatou Binetou Diallo
 
-## React Compiler
+## 🛠 Stack technique
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** + Vite — interface utilisateur
+- **Supabase** — base de données PostgreSQL + authentification
+- **Vercel** — déploiement et fonctions serverless
+- **React Router** — navigation SPA
+- **Resend** — envoi d'e-mails
 
-## Expanding the ESLint configuration
+## 🚀 Installation locale
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/iness321/mon-kanban.git
+cd mon-kanban
+npm install
+cp .env.local.example .env.local
+npm run dev
+
+## 🔑 Variables d'environnement
+
+Créez un fichier `.env.local` à la racine :
+
+VITE_SUPABASE_URL=https://xxxxxx.supabase.co
+VITE_SUPABASE_ANON_KEY=ma-clé-anon
+RESEND_API_KEY=ma-clé-resend
+
+## ✅ Fonctionnalités
+
+- Inscription / Connexion / Déconnexion
+- Dashboard avec tâches en colonnes Kanban (À faire / En cours / Validation / Terminée)
+- Création, modification et suppression de tâches
+- Filtres par priorité et statut
+- Système de commentaires sur les tâches
+- Page profil avec upload d'avatar
+- Compteurs de tâches par statut
+- Envoi d'e-mails via Resend
+
+## 🌐 Application déployée
+
+https://mon-kanban-olive.vercel.app
